@@ -1,8 +1,8 @@
 import path from 'path';
-import {Configuration as WebpackConfiguration} from 'webpack';
-import {Configuration as WebpackDevServerConfiguration} from 'webpack-dev-server';
-import {buildPlugins} from './config/build/buildPlugins';
-import {buildLoaders} from './config/build/buildLoaders';
+import { Configuration as WebpackConfiguration } from 'webpack';
+import { Configuration as WebpackDevServerConfiguration } from 'webpack-dev-server';
+import { buildPlugins } from './config/build/buildPlugins';
+import { buildLoaders } from './config/build/buildLoaders';
 
 interface Configuration extends WebpackConfiguration {
     devServer?: WebpackDevServerConfiguration;
