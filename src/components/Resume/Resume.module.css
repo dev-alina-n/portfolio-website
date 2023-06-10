@@ -1,0 +1,23 @@
+.resumeContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resumeCard {
+    display: flex;
+}
+
+@media only screen and (width <= 1023px) {
+    .resumeCard {
+        width: 90%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0;
+        align-items: center;
+    }
+}
