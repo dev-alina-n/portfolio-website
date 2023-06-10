@@ -1,0 +1,74 @@
+.resumeScreenContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 360px;
+}
+
+.resumeDetailsList {
+    transition: transform 1s ease-out;
+}
+
+.resumeDetailsContainer {
+    flex-grow: 1;
+    width: 600px;
+}
+
+.programmingSkillsContainer {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skillParent {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.skillParent span {
+    font-family: 'SF Compact Display Bold', sans-serif;
+    font-size: 16px;
+    color: var(--primary-color);
+}
+
+.skillTitleContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.skillTitleContainer :not(:last-child) {
+    margin-right: 12px;
+}
+
+.headingBullet {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+.skillPercentage {
+    position: relative;
+    height: 15px;
+    width: 70%;
+    background-color: var(--primary-color);
+    margin-left: 28px;
+}
+
+.skillPercentage .activePercentageBar {
+    height: 15px;
+    transition: 0.8s ease;
+    position: absolute;
+    background-color: var(--background-color);
+}
+
+@media only screen and (width <= 1023px) {
+    .resumeDetailsContainer {
+        height: 360px;
+        padding: 0;
+        width: fit-content;
+    }
+}

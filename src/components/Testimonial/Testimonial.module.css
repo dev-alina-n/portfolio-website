@@ -1,0 +1,40 @@
+.testimonialContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.testimonialParent {
+    max-width: 1000px;
+    width: 70%;
+}
+
+.testimonialCard {
+    box-shadow: 0 0 20px -2px var(--background-color);
+}
+
+.testimonialContent {
+    text-align: justify;
+    padding: 30px;
+}
+
+.btnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quoteRight {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.textContainer {
+    margin-top: revert;
+}
+
+@media screen and (width <= 898px) {
+    .testimonialContent {
+        width: 100%;
+    }
+}

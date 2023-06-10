@@ -1,0 +1,119 @@
+.profileContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 88px;
+}
+
+.profileDetailsName {
+    font-size: 24px;
+    font-family: "SF Compact Display Semibold", sans-serif;
+}
+
+.highlightedText {
+    margin-left: 6px;
+    color: var(--primary-color);
+}
+
+.primaryText {
+    color: var(--white);
+}
+
+.profilePictureClassic,
+.profilePictureShrek {
+    height: 92%;
+    width: 92%;
+    background-image: url("../../../../../public/assets/avatars/profilephoto.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.profilePictureShrek {
+    background-image: url("../../../../../public/assets/avatars/shrek.jpeg");
+}
+
+.profilePictureClassic:hover,
+.profilePictureShrek:hover {
+    transform: scale(1.07);
+    transition: 1s ease-out;
+}
+
+.profilePicture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 0 0 var(--white);
+    border-radius: 50%;
+    height: 380px;
+    width: 380px;
+    margin: 0 0 0 100px;
+}
+
+.tickerContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 14px 0 24px;
+}
+
+.tickerContainer h1 {
+    font-size: 40px;
+    font-family: cursive;
+}
+
+.profileDetails {
+    width: 380px;
+}
+
+@media screen and (width <= 1110px) {
+    .profileDetailsName {
+        font-size: 20px;
+    }
+
+    .profilePicture {
+        margin: 0 0 0 80px;
+    }
+
+    .tickerContainer .primaryText {
+        font-size: 12px;
+    }
+}
+
+@media screen and (width <= 910px) {
+    .profilePicture {
+        height: 320px;
+        width: 320px;
+        margin: 0 0 0 4px;
+    }
+}
+
+@media screen and (width <= 810px) {
+    .profileContainer {
+        flex-direction: column-reverse;
+    }
+
+    .profileDetails {
+        margin: 25px 0 0;
+    }
+
+    .profilePicture {
+        margin: 0 !important;
+    }
+
+    .tickerContainer {
+        text-align: center;
+    }
+}
+
+@media screen and (width <= 375px) {
+    .profileDetails {
+        width: 90%;
+    }
+
+    .profilePicture {
+        height: 275px;
+        width: 275px;
+        margin-top: -90px;
+    }
+}
