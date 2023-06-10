@@ -29,6 +29,7 @@ const config: Configuration = {
         open: true,
         historyApiFallback: true,
     },
+    performance: { hints: false },
 };
 
 export default config;
