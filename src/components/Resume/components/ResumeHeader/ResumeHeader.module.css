@@ -1,0 +1,36 @@
+.resumeHeading {
+    display: flex;
+    flex-direction: column;
+}
+
+.resumeMainHeading {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resumeMainHeading span {
+    color: var(--primary-color);
+    font-size: 16px;
+    font-family: "SF Compact Display Semibold", sans-serif;
+}
+
+.headingDate {
+    background-color: var(--primary-color);
+    padding: 4px 12px;
+    font-size: 14px;
+    border-radius: 14px;
+    color: var(--white);
+}
+
+.resumeSubheading {
+    font-size: 14px;
+    font-family: "SF Compact Display Semibold", sans-serif;
+    color: var(--black);
+    margin: 10px 0 0;
+}
+
+.resumeHeadingDescription {
+    font-size: 12px;
+    text-align: justify;
+}
