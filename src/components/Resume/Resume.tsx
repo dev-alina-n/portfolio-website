@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import {useState} from 'react';
 import classes from './Resume.module.css';
-import CategoryTitle from '../common/CategoryTitle/CategoryTitle';
+import CategoryTitle from 'components/common/CategoryTitle/CategoryTitle';
 import ResumeIcons from './components/ResumeIcons/ResumeIcons';
 import ResumeDetails from './components/ResumeDetails/ResumeDetails';
-import { RESUME_DETAILS_TYPE } from './resumeDataTypes';
+import {RESUME_DETAILS_TYPE} from './resumeDataTypes';
 
 const Resume = () => {
     const [
@@ -13,13 +13,13 @@ const Resume = () => {
 
     return (
         <div className={classes.resumeContainer} id="resume">
-            <CategoryTitle title="Резюме" subtitle="Стэк и опыт работы" />
+            <CategoryTitle title="Резюме" subtitle="Стэк и опыт работы"/>
             <div className={classes.resumeCard}>
                 <ResumeIcons
                     onIconClick={setComponentToRender}
                     selectedItem={componentToRender}
                 />
-                <ResumeDetails detailToDisplay={componentToRender} />
+                <ResumeDetails detailToDisplay={componentToRender}/>
             </div>
         </div>
     );

@@ -1,16 +1,16 @@
-import { useTranslation } from 'react-i18next';
+import {useTranslation} from 'react-i18next';
+import CategoryTitle from 'components/common/CategoryTitle/CategoryTitle';
 import classes from './AboutMe.module.css';
-import CategoryTitle from '../common/CategoryTitle/CategoryTitle';
-import { SCREEN_DESCRIPTION } from './aboutData';
+import {SCREEN_DESCRIPTION} from './aboutData';
 import Highlights from './components/Highlights';
 
 function AboutMe() {
-    const { t } = useTranslation();
+    const {t} = useTranslation();
 
     return (
         <div className={classes.aboutContainer} id="about">
             <div className={classes.aboutParent}>
-                <CategoryTitle title="Обо мне" />
+                <CategoryTitle title="Обо мне"/>
                 <div className={classes.aboutDetails}>
                     <span className={classes.aboutDescription}>
                         {t(SCREEN_DESCRIPTION.description)}
@@ -20,7 +20,7 @@ function AboutMe() {
                             <span>{t(SCREEN_DESCRIPTION.heading)}</span>
                         </div>
                         <div>
-                            <Highlights />
+                            <Highlights/>
                         </div>
                     </div>
                 </div>
