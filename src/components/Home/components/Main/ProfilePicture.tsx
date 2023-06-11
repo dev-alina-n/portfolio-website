@@ -1,8 +1,8 @@
+import { useTheme } from 'theme/useTheme';
 import classes from './Main.module.css';
-import {useTheme} from 'theme/useTheme';
 
 const ProfilePicture = () => {
-    const {isClassicTheme, toggleTheme} = useTheme();
+    const { isClassicTheme, toggleTheme } = useTheme();
     const pictureClassName = isClassicTheme ? `${classes.profilePictureClassic}` : `${classes.profilePictureShrek}`;
 
     return (

@@ -1,10 +1,10 @@
-import React, {useRef, useState} from 'react';
+import React, { useRef, useState } from 'react';
 import emails from '@emailjs/browser';
 import Typical from 'react-typical';
-import {useTranslation} from 'react-i18next';
-import classes from './ContactMe.module.css';
+import { useTranslation } from 'react-i18next';
 import CategoryTitle from 'components/common/CategoryTitle/CategoryTitle';
 import NetworkIcons from 'components/common/NetworkIcons/NetworkIcons';
+import classes from './ContactMe.module.css';
 
 const EMAIL_DETAILS_TYPE = {
     SERVICE_ID: process.env.EMAIL_SERVICE_ID,
@@ -18,7 +18,7 @@ const TYPICAL_STEP: Array<number | string> = [
 ];
 
 const ContactMe = () => {
-    const {t, i18n} = useTranslation();
+    const { t, i18n } = useTranslation();
 
     const [btnLoading, setBtnLoading] = useState(false);
     const [errorMsg, setErrorMsg] = useState('');
@@ -48,22 +48,22 @@ const ContactMe = () => {
 
     return (
         <div className={classes.contactContainer} id="contact">
-            <CategoryTitle title="Связаться со мной"/>
+            <CategoryTitle title="Связаться со мной" />
             <div className={classes.centralForm}>
                 <div className={classes.col}>
                     <h2 className="title" key={i18n.language}>
-                        <Typical loop={Infinity} steps={steps}/>
+                        <Typical loop={Infinity} steps={steps} />
                     </h2>
-                    <NetworkIcons/>
+                    <NetworkIcons />
                 </div>
                 <div className={classes.backForm}>
                     <div className={classes.imgBack}>
-                        <img src="/assets/background/mails.jpeg" alt="oops"/>
+                        <img src="/assets/background/mails.jpeg" alt="oops" />
                     </div>
                     <form ref={emailForm} onSubmit={sendEmail}>
                         <label htmlFor="name">
                             {t('Имя')}
-                            <input type="text" placeholder={t('Имя')} name="user_name" minLength={2} required/>
+                            <input type="text" placeholder={t('Имя')} name="user_name" minLength={2} required />
                         </label>
 
                         <label htmlFor="email">
@@ -79,7 +79,7 @@ const ContactMe = () => {
 
                         <label htmlFor="message">
                             {t('Сообщение')}
-                            <textarea name="message" rows={8} required minLength={20}/>
+                            <textarea name="message" rows={8} required minLength={20} />
                         </label>
 
                         {errorMsg && <span className={classes.errorMsg}>{errorMsg}</span>}
@@ -87,7 +87,7 @@ const ContactMe = () => {
                         <div className="send-btn">
                             <button type="submit" disabled={btnLoading}>
                                 {btnLoading ? t('Отправка') : t('Отправить')}
-                                <i className={btnLoading ? `fa fa-spinner ${classes.loading}` : 'fa fa-paper-plane'}/>
+                                <i className={btnLoading ? `fa fa-spinner ${classes.loading}` : 'fa fa-paper-plane'} />
                             </button>
                         </div>
                     </form>
