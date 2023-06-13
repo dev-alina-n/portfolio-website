@@ -16,7 +16,7 @@ export function buildPlugins(): webpack.WebpackPluginInstance[] {
         }),
         new Dotenv({
             systemvars: true,
-            path: path.resolve('.env'),
+            path: path.resolve('./.env'),
         }),
         new CopyPlugin({
             patterns: [
