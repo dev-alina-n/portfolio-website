@@ -14,7 +14,10 @@ export function buildPlugins(): webpack.WebpackPluginInstance[] {
         new MiniCssExtractPlugin({
             filename: 'css/[name].[contenthash:8].css',
         }),
-        new Dotenv({ systemvars: true }),
+        new Dotenv({
+            systemvars: true,
+            path: path.resolve('./.env'),
+        }),
         new CopyPlugin({
             patterns: [
                 {
