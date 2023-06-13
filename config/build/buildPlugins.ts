@@ -15,6 +15,7 @@ export function buildPlugins(): webpack.WebpackPluginInstance[] {
             filename: 'css/[name].[contenthash:8].css',
         }),
         new Dotenv({
+            systemvars: true,
             path: path.resolve('./.env'),
         }),
         new CopyPlugin({
