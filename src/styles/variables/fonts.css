@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "SF Compact Display Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/SFCompactDisplay-Regular.otf");
+}
+
+@font-face {
+    font-family: "SF Compact Display Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/SFCompactDisplay-Bold.otf");
+}
+
+@font-face {
+    font-family: "SF Compact Display Semibold";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/SFCompactDisplay-Semibold.otf");
+}
+
+@font-face {
+    font-family: "SF Compact Display ExtraBold";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/SFCompactDisplay-Heavy.otf");
+}

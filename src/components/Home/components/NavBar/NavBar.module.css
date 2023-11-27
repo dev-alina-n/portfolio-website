@@ -1,0 +1,96 @@
+.navbarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 0 30px;
+    color: var(--white);
+}
+
+.navbarLogo {
+    font-size: 50px;
+    font-family: "SF Compact Display ExtraBold", sans-serif;
+    color: var(--white);
+}
+
+.navbarOption {
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.navbarHamburger {
+    display: none;
+    color: var(--white);
+}
+
+.navbarOptionSeparator {
+    margin: 0 50px 0 0;
+    color: var(--white);
+}
+
+.selectedNavbarOption {
+    color: var(--primary-color);
+}
+
+.headerOptions {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a {
+    color: var(--white);
+}
+
+@media screen and (width <= 970px) {
+    .navbarHamburger {
+        display: block;
+    }
+
+    .navbarContainer {
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    .navbarOptionSeparator {
+        margin: 0;
+    }
+
+    .selectedNavbarOption {
+        color: var(--white);
+    }
+
+    .navbarOption {
+        color: var(--white);
+    }
+
+    .navbarHamburgerBars {
+        font-size: 30px;
+        cursor: pointer;
+        margin: 0 10px;
+        color: var(--white);
+    }
+
+    .headerOptions {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: -100%;
+        transition: all 0.8s ease-out;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        justify-content: space-around;
+        background-color: var(--background-color);
+        z-index: 1000;
+        opacity: 0.5;
+    }
+
+    .showHamburgerOptions {
+        left: 0;
+        opacity: 1;
+    }
+}

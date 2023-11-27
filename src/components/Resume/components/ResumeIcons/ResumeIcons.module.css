@@ -1,0 +1,71 @@
+.imageContainer {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--background-color);
+    height: 40px;
+    margin: 15px 0;
+    padding: 0 8px;
+    border-radius: 20px;
+    width: 30px;
+    transition: width 0.6s ease;
+}
+
+.logo {
+    height: 16px;
+    margin: 0 30px 0 0;
+}
+
+.iconLabel, .highlightedIconLabel {
+    transition: all 300ms;
+    font-size: 14px;
+    white-space: nowrap;
+    font-family: "SF Compact Display Semibold", sans-serif;
+    padding: 4px 8px;
+}
+
+.iconLabel:hover {
+    border-radius: inherit;
+    background-color: var(--shadow);
+    color: var(--white);
+}
+
+.highlightedIconLabel {
+    border-radius: inherit;
+    color: var(--white);
+    background-color: var(--background-color);
+}
+
+.iconsList {
+    width: 86%;
+    position: relative;
+    z-index: 2;
+}
+
+.bulletIcon {
+    width: 34px;
+    height: 100%;
+    z-index: 1;
+    background-color: var(--background-color);
+    position: absolute;
+}
+
+.iconsContainer {
+    box-shadow: 15px 0 9px -15px var(--background-color);
+    width: 320px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 80px;
+}
+
+@media only screen and (width <= 1023px) {
+    .iconsList {
+        width: 90%;
+    }
+
+    .iconsContainer {
+        margin: 0 0 24px;
+        width: 100%;
+    }
+}

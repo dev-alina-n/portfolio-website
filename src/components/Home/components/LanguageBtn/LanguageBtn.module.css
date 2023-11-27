@@ -1,0 +1,10 @@
+.languageBtn {
+    border: none;
+    background-color: unset;
+    color: var(--white);
+    width: fit-content;
+}
+
+.languageBtn:focus {
+    outline: none;
+}

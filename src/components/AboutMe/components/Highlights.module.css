@@ -1,0 +1,14 @@
+.highlight {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.highlightBlob {
+    height: 12px;
+    width: 12px;
+    margin: 0 10px 0 0;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
